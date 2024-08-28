@@ -4,8 +4,8 @@
 	"version": "0.0.0",
 	"type": "module",
 	"scripts": {
-		"dev": "DEBUG=zephyr vite",
-		"build": "vite build",
+		"dev": "DEBUG=zephyr:log,zephyr:error vite",
+		"build": "DEBUG=zephyr:log,zephyr:error vite build",
 		"lint": "eslint .",
 		"preview": "vite preview"
 	},
@@ -25,6 +25,6 @@
 		"eslint-plugin-react-refresh": "^0.4.9",
 		"globals": "^15.9.0",
 		"vite": "^5.4.1",
-		"vite-plugin-zephyr": "0.0.13"
+		"vite-plugin-zephyr": "0.0.16"
 	}
 }
