@@ -10,5 +10,9 @@
 	},
 	"author": "",
 	"license": "ISC",
-	"description": ""
+	"description": "",
+	"devDependencies": {
+		"zephyr-agent": "link:../zephyr-mono/libs/zephyr-agent",
+		"vite-plugin-zephyr": "link:../zephyr-mono/libs/vite-plugin-zephyr"
+	}
 }
