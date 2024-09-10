@@ -5,14 +5,19 @@
 	"scripts": {
 		"host-build": "cd host && npm run build",
 		"remote-build": "cd remote && npm run build",
+		"webpack-build": "cd webpack && npm run build",
 		"host": "cd host && npm run dev",
-		"remote": "cd remote && npm run dev"
+		"remote": "cd remote && npm run dev",
+		"webpack": "cd webpack && npm run build:dev"
 	},
 	"author": "",
 	"license": "ISC",
 	"description": "",
 	"devDependencies": {
+		"@originjs/vite-plugin-federation": "^1.3.5",
 		"zephyr-agent": "link:../zephyr-mono/libs/zephyr-agent",
-		"vite-plugin-zephyr": "link:../zephyr-mono/libs/vite-plugin-zephyr"
+		"vite-plugin-zephyr": "link:../zephyr-mono/libs/vite-plugin-zephyr",
+		"vite-plugin-svgr": "4.2.0",
+		"zephyr-webpack-plugin": "link:../zephyr-mono/libs/zephyr-webpack-plugin"
 	}
 }

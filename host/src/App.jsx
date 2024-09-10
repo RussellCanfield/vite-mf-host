@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 const RemoteButton = lazy(() => import('remote/Button'));
+const WebpackRemoteButton = lazy(() => import('webpack/Button'));
 
 function App() {
   const [count, setCount] = useState(0)
@@ -22,6 +23,9 @@ function App() {
       <div className="card">
         <Suspense>
           <RemoteButton />
+        </Suspense>
+        <Suspense>
+          <WebpackRemoteButton />
         </Suspense>
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
